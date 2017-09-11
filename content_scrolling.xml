@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.android.bharathash.ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editSting"
+            android:background="#E3F2FD"
+            android:textSize="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:hint="String"
+            android:textStyle="normal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+
+
+        <EditText
+            android:textStyle="normal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Hash code"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/showingText"
+            android:background="#E3F2FD"
+            android:textColor="#000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Generate Hash"
+                android:textSize="21dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="#673AB7"
+                android:onClick="hashGenerator"
+                android:id="@+id/generate"
+                android:textColor="#FFFFFF"/>
+            <Button
+                android:onClick="reset"
+                android:text="reset"
+                android:background="#673AB7"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editSting2"
+            android:background="#E3F2FD"
+            android:textSize="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Hash code"
+            android:textStyle="normal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+
+        <EditText
+            android:textStyle="normal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="String"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/showingText2"
+            android:background="#E3F2FD"
+            android:textColor="#000000"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get message"
+                android:textSize="24dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="#673AB7"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:onClick="getMessage"
+                android:textColor="#FFFFFF"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="21dp"
+                android:background="#673AB7"
+                android:onClick="copy"
+                android:id="@+id/Copy"
+                android:text="copy hash"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
